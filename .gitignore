@@ -2,628 +2,143 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/AngryBird/Assets/PocketRPG Trails
+*.suo
+*.db
+*.json
+*.meta
+*.sqlite
+*.controller
+*.anim
+*.png
+*.otf
+*.mat
+*.wav
+*.mp3
+*.psd
+*.prefab
+*.md
+*.fbx
+*.zip
+*.unity
+*.rtf
+*.tif
+*.graph
+*.info
+*.uss
+/AngryBird/Library/metadata
+*.asmdef
+*.dll
+*.mdb
+*.pdb
+*.xml
+*.txt
+*.npmignore
+*.yml
+*.editorconfig
+*.config
+*.assets
+*.resS
+*.yaml
+*.resource
+*.bin
+*.prefs
+*.asset
+*.dwlt
+*.log
+*.CopyComplete
+*.cache
+*.sln
+*.csproj
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+/BreakTheBricks/Library/metadata
+*.stamp
+*.docx
+*.overrideController
+*.aif
+/RoguelikeProject/Library/metadata
+*.ttf
+*.cginc
+*.shader
+*.unitypackage
+/Unity_Project_First/TanksProject/Library/metadata
+/Unity_Project_First/Tanks/Library/metadata
+/Unity_Project_First/TankBattle/Library/metadata
+/Unity_Project_First/StickPin/Library/metadata
+/Unity_Project_First/Snake/Library/metadata
+/Unity_Project_First/Roll A Ball/Library/metadata
+/Unity_Project_First/RoguelikeProject/Library/metadata
+/Unity_Project_First/New Unity Project/Library/metadata
+/Unity_Project_First/FishMaster/Library/metadata
+/Unity_Project_First/DOTweenProject/Library/metadata
+/Unity_Project_First/BreakTheBricks/Library/metadata
+/Unity_Project_First/AngryBird/Library/metadata
+/Unity_Project_First/014/Library/metadata
+/UGUI_Project/Library/metadata
+/TankBattle/Library/metadata
+/StickPin/Library/metadata
+/Snake/Library/metadata
+/Roll A Ball/Library/metadata
+*.terrainlayer
+*.tga
+*.userprefs
+*.jpg
+*.spm
+*.bmp
+*.exr
+*.OBJ
+*.user
+/AngryBird/obj/Debug
 /AngryBird/Library
-/AngryBird/obj
-/BreakTheBricks/obj
+/AngryBird/Assets/PocketRPG Trails/Scripts
+/BreakTheBricks/obj/Debug
 /BreakTheBricks/Library
-/RoguelikeProject/obj
+/RoguelikeProject/obj/Debug
 /RoguelikeProject/Library
 /Roll A Ball/Library
-/Snake/obj
+/Snake/obj/Debug
 /Snake/Library
-/StickPin/obj
+/StickPin/obj/Debug
 /StickPin/Library
-/TankBattle/obj
+/TankBattle/obj/Debug
 /TankBattle/Library
-/UGUI_Project/obj
+/UGUI_Project/obj/Debug
 /UGUI_Project/Library
-/.vs
-/AngryBird/ProjectSettings
-/AngryBird/Packages
-/AngryBird/Logs
-/AngryBird/Fonts
-/AngryBird/Assembly-CSharp.csproj
-/AngryBird/AngryBird.sln
-/AngryBird/Assets/Scenes
-/AngryBird/Assets/Resources
-/AngryBird/Assets/Prefabs
-/AngryBird/Assets/Music
-/AngryBird/Assets/Materials
-/AngryBird/Assets/Image
-/AngryBird/Assets/Fonts
-/AngryBird/Assets/Animation
-/AngryBird/Assets/Standard Assets.meta
-/AngryBird/Assets/Standard Assets
-/AngryBird/Assets/Scripts.meta
-/AngryBird/Assets/Scenes.meta
-/AngryBird/Assets/Resources.meta
-/AngryBird/Assets/Prefabs.meta
-/AngryBird/Assets/PocketRPG Trails.meta
-/AngryBird/Assets/Music.meta
-/AngryBird/Assets/Materials.meta
-/AngryBird/Assets/Image.meta
-/AngryBird/Assets/Fonts.meta
-/AngryBird/Assets/Animation.meta
-/BreakTheBricks/.vs/BreakTheBricks/v15
-/BreakTheBricks/Assets/Scripts.meta
-/BreakTheBricks/Assets/Scenes.meta
-/BreakTheBricks/Assets/Scenes
-/BreakTheBricks/Assets/Prefebs.meta
-/BreakTheBricks/Assets/Prefebs
-/BreakTheBricks/Assets/Materials.meta
-/BreakTheBricks/Assets/Materials
-/BreakTheBricks/ProjectSettings
-/BreakTheBricks/Packages
-/BreakTheBricks/BreakTheBricks.sln
-/BreakTheBricks/Break The Bricks 思路流程.docx
-/BreakTheBricks/Assembly-CSharp.csproj
-/RoguelikeProject/.vs/RoguelikeProject/v15
-/RoguelikeProject/Assets/Scenes
-/RoguelikeProject/Assets/Prefabs
-/RoguelikeProject/Assets/Fonts
-/RoguelikeProject/Assets/Audio
-/RoguelikeProject/Assets/Animations
-/AngryBird/Assets/Scripts/YellowBird.cs.meta
-/AngryBird/Assets/Scripts/PausePanel.cs.meta
-/AngryBird/Assets/Scripts/MyTrail.cs.meta
-/AngryBird/Assets/Scripts/MapSelected.cs.meta
-/AngryBird/Assets/Scripts/LoadLevel.cs.meta
-/AngryBird/Assets/Scripts/LevelSelected.cs.meta
-/AngryBird/Assets/Scripts/GreenBird.cs.meta
-/AngryBird/Assets/Scripts/GameManager_Loading.cs.meta
-/AngryBird/Assets/Scripts/GameManager_Game.cs.meta
-/AngryBird/Assets/Scripts/Enemy.cs.meta
-/AngryBird/Assets/Scripts/ClearRecord.cs.meta
-/AngryBird/Assets/Scripts/BtnReturn.cs.meta
-/AngryBird/Assets/Scripts/Boom.cs.meta
-/AngryBird/Assets/Scripts/BlackBird.cs.meta
-/AngryBird/Assets/Scripts/Bird.cs.meta
-/BreakTheBricks/Assets/Scripts/Shoot.cs.meta
-/BreakTheBricks/Assets/Scripts/Movement.cs.meta
-/RoguelikeProject/Assets/Scripts/Wall.cs.meta
-/RoguelikeProject/Assets/Scripts/StartGame.cs.meta
-/RoguelikeProject/Assets/Scripts/Player.cs.meta
-/RoguelikeProject/Assets/Scripts/MapManager.cs.meta
-/RoguelikeProject/Assets/Scripts/Loader.cs.meta
-/RoguelikeProject/Assets/Scripts/GameManager.cs.meta
-/RoguelikeProject/Assets/Scripts/Food.cs.meta
-/RoguelikeProject/Assets/Scripts/Enemy.cs.meta
-/RoguelikeProject/Assets/Sprites.meta
-/RoguelikeProject/Assets/Sprites/Scavengers_SpriteSheet.png.meta
-/RoguelikeProject/Assets/Scripts.meta
-/RoguelikeProject/Assets/Scenes.meta
-/RoguelikeProject/Assets/Prefabs.meta
-/RoguelikeProject/Assets/Fonts.meta
-/RoguelikeProject/Assets/Audio.meta
-/RoguelikeProject/Assets/Animations.meta
-/Roll A Ball/Assets/Materials/Wall.mat.meta
-/Roll A Ball/Assets/Materials/Player.mat.meta
-/Roll A Ball/Assets/Materials/PickUp.mat.meta
-/Roll A Ball/Assets/Materials/Ground.mat.meta
-/Roll A Ball/Assets/Scenes/main.unity.meta
-/Roll A Ball/Assets/Prefebs/PickUp.prefab.meta
-/Roll A Ball/Assets/Scripts.meta
-/Roll A Ball/Assets/Scripts/Player.cs.meta
-/Roll A Ball/Assets/Scripts/PickUp.cs.meta
-/Roll A Ball/Assets/Scripts/FollowPlayer.cs.meta
-/Roll A Ball/Assets/Scenes.meta
-/Roll A Ball/Assets/Prefebs.meta
-/Roll A Ball/Assets/Materials.meta
-/Snake/Assets/Audio/Eat.mp3.meta
-/Snake/Assets/Audio/Die.mp3.meta
-/Snake/Assets/Audio/BGM.mp3.meta
-/RoguelikeProject/Assets/Sprites
-/RoguelikeProject/RoguelikeProject.sln
-/RoguelikeProject/ProjectSettings
-/RoguelikeProject/Packages
-/RoguelikeProject/Logs
-/RoguelikeProject/Assembly-CSharp.csproj
-/Roll A Ball/Assets/Scenes
-/Roll A Ball/Assets/Prefebs
-/Roll A Ball/Assets/Materials
-/Roll A Ball/UnityEngine.TestRunner.csproj
-/Roll A Ball/UnityEditor.TestRunner.csproj
-/Roll A Ball/Unity.VSCode.Editor.csproj
-/Roll A Ball/Unity.TextMeshPro.Editor.csproj
-/Roll A Ball/Unity.TextMeshPro.csproj
-/Roll A Ball/Unity.Rider.Editor.csproj
-/Roll A Ball/Unity.CollabProxy.Editor.csproj
-/Roll A Ball/Roll A Ball Copy.sln
-/Roll A Ball/Roll A Ball Copy.csproj
-/Roll A Ball/ProjectSettings
-/Roll A Ball/Packages
-/Roll A Ball/obj
-/Roll A Ball/Assembly-CSharp.csproj
-/Snake/.vs/Snake/v15
-/Snake/Assets/Scenes
-/Snake/Assets/Resources
-/Snake/Assets/Prefabs
-/Snake/Assets/Fonts
-/Snake/Assets/Effects
-/Snake/Assets/Audio
-/Snake/Assets/Sprites.meta
-/Snake/Assets/Sprites
-/Snake/Assets/Scripts.meta
-/Snake/Assets/Scenes.meta
-/Snake/Assets/Resources.meta
-/Snake/Assets/Prefabs.meta
-/Snake/Assets/Fonts.meta
-/Snake/Assets/Effects.meta
-/Snake/Assets/Audio.meta
-/Snake/Snake.sln
-/Snake/ProjectSettings
-/Snake/Packages
-/Snake/Logs
-/Snake/Assembly-CSharp.csproj
-/StickPin/.vs/StickPin/v15
-/StickPin/Assets/Scenes
-/StickPin/Assets/Prefebs
-/StickPin/Assets/Image
-/StickPin/Assets/Scripts.meta
-/StickPin/Assets/Scenes.meta
-/StickPin/Assets/Prefebs.meta
-/StickPin/Assets/Image.meta
-/StickPin/素材
-/StickPin/UnityEngine.TestRunner.csproj
-/StickPin/UnityEditor.TestRunner.csproj
-/StickPin/Unity.VSCode.Editor.csproj
-/StickPin/Unity.TextMeshPro.Editor.csproj
-/StickPin/Unity.TextMeshPro.csproj
-/StickPin/Unity.Rider.Editor.csproj
-/StickPin/Unity.CollabProxy.Editor.csproj
-/StickPin/StickPin.sln
-/StickPin/StickPin.csproj
-/StickPin/Stick Pin 思路流程.docx
-/StickPin/Assembly-CSharp.csproj
-/TankBattle/.vs/TankBattle/v15
-/TankBattle/Assets/Scenes
-/TankBattle/Assets/Prefabs
-/TankBattle/Assets/GameResource
-/TankBattle/Assets/AnimatorController
-/TankBattle/Assets/Animation
-/TankBattle/Assets/Scripts.meta
-/TankBattle/Assets/Scenes.meta
-/TankBattle/Assets/Prefabs.meta
-/TankBattle/Assets/GameResource.meta
-/TankBattle/Assets/AnimatorController.meta
-/TankBattle/Assets/Animation.meta
-/TankBattle/UnityEngine.TestRunner.csproj
-/TankBattle/UnityEditor.TestRunner.csproj
-/TankBattle/Unity.VSCode.Editor.csproj
-/TankBattle/Unity.TextMeshPro.Editor.csproj
-/TankBattle/Unity.TextMeshPro.csproj
-/TankBattle/Unity.Rider.Editor.csproj
-/TankBattle/Unity.CollabProxy.Editor.csproj
-/TankBattle/TankBattle.sln
-/TankBattle/TankBattle.csproj
-/TankBattle/ProjectSettings
-/TankBattle/Packages
-/TankBattle/Logs
-/TankBattle/Assembly-CSharp.csproj
-/UGUI_Project/Assets/Scenes
-/UGUI_Project/Assets/Prefabs
-/UGUI_Project/Assets/UI.meta
-/UGUI_Project/Assets/UI
-/UGUI_Project/Assets/Scripts.meta
-/UGUI_Project/Assets/Scenes.meta
-/UGUI_Project/Assets/Prefabs.meta
-/UGUI_Project/UGUI_Project.sln.DotSettings.user
-/UGUI_Project/UGUI_Project.sln
-/UGUI_Project/ProjectSettings
-/UGUI_Project/Packages
-/UGUI_Project/Assembly-CSharp.csproj
-/Snake/Assets/Scripts/SnakeHead.cs.meta
-/Snake/Assets/Scripts/GameManagerStart.cs.meta
-/Snake/Assets/Scripts/GameManager.cs.meta
-/StickPin/Assets/Scripts/RotateSelf.cs.meta
-/StickPin/Assets/Scripts/PinHead.cs.meta
-/StickPin/Assets/Scripts/Pin.cs.meta
-/StickPin/Assets/Scripts/GameManager.cs.meta
-/TankBattle/Assets/Scripts/Manager/Option.cs.meta
-/TankBattle/Assets/Scripts/Manager/MoveToEndPos.cs.meta
-/TankBattle/Assets/Scripts/Manager/MapGenerator.cs.meta
-/TankBattle/Assets/Scripts/Manager/GameManager.cs.meta
-/TankBattle/Assets/Scripts/Manager/Destroy.cs.meta
-/TankBattle/Assets/Scripts/Map/Heart.cs.meta
-/TankBattle/Assets/Scripts/Map/DestroyAudio.cs.meta
-/TankBattle/Assets/Scripts/Tank/EnemyTank/EnemyMovement.cs.meta
-/TankBattle/Assets/Scripts/Tank/EnemyTank/EnemyManager.cs.meta
-/TankBattle/Assets/Scripts/Tank/EnemyTank/EnemyAttack.cs.meta
-/TankBattle/Assets/Scripts/Tank.meta
-/TankBattle/Assets/Scripts/Tank/PlayerTank.meta
-/TankBattle/Assets/Scripts/Tank/PlayerTank/TankMovement.cs.meta
-/TankBattle/Assets/Scripts/Tank/PlayerTank/TankManager.cs.meta
-/TankBattle/Assets/Scripts/Tank/PlayerTank/TankAttack.cs.meta
-/TankBattle/Assets/Scripts/Tank/EnemyTank.meta
-/TankBattle/Assets/Scripts/Tank/Bullet.cs.meta
-/TankBattle/Assets/Scripts/Tank/Born.cs.meta
-/TankBattle/Assets/Scripts/Map.meta
-/TankBattle/Assets/Scripts/Manager.meta
-/UGUI_Project/Assets/Scripts/SkillItem.cs.meta
-/UGUI_Project/Assets/Scripts/Player.cs.meta
-/UGUI_Project/Assets/Scripts/MyToggle.cs.meta
-/UGUI_Project/Assets/Scripts/LevelBtnScrollRect.cs.meta
-/UGUI_Project/Assets/Scripts/GameManager.cs.meta
-/UGUI_Project/Assets/Scripts/ChatManager.cs.meta
-/StickPin/ProjectSettings
-/StickPin/Packages
-/StickPin/Logs
-/Unity_Project_First/014/.vs/014/v15
-/Unity_Project_First/014/Assets/Scenes.meta
-/Unity_Project_First/014/Assets/Scenes
-/Unity_Project_First/014/Assets/NewBehaviourScript.cs.meta
-/Unity_Project_First/014/ProjectSettings
-/Unity_Project_First/014/Packages
-/Unity_Project_First/014/obj
-/Unity_Project_First/014/Logs
+/Unity_Project_First/014/obj/Debug
 /Unity_Project_First/014/Library
-/Unity_Project_First/014/Assembly-CSharp.csproj
-/Unity_Project_First/014/014.sln
-/Unity_Project_First/AngryBird/ProjectSettings
-/Unity_Project_First/AngryBird/Packages
-/Unity_Project_First/AngryBird/obj
-/Unity_Project_First/AngryBird/Logs
+/Unity_Project_First/AngryBird/obj/Debug
 /Unity_Project_First/AngryBird/Library
-/Unity_Project_First/AngryBird/Assembly-CSharp.csproj
-/Unity_Project_First/AngryBird/Assembly-CSharp-firstpass.csproj
-/Unity_Project_First/AngryBird/AngryBird.sln
-/Unity_Project_First/AngryBird/.vs/AngryBird/v15
-/Unity_Project_First/BreakTheBricks/素材、源码工程.zip
+/Unity_Project_First/AngryBird/Assets/PocketRPG Trails/Scripts
 /Unity_Project_First/BreakTheBricks/素材、源码工程
-/Unity_Project_First/BreakTheBricks/ProjectSettings
 /Unity_Project_First/BreakTheBricks/Library
-/Unity_Project_First/DOTweenProject/ProjectSettings
-/Unity_Project_First/DOTweenProject/Packages
-/Unity_Project_First/DOTweenProject/obj
-/Unity_Project_First/DOTweenProject/Logs
+/Unity_Project_First/DOTweenProject/obj/Debug
 /Unity_Project_First/DOTweenProject/Library
-/Unity_Project_First/DOTweenProject/DOTweenProject.sln
-/Unity_Project_First/DOTweenProject/Assembly-CSharp.csproj
-/Unity_Project_First/DOTweenProject/Assembly-CSharp-Editor.csproj
-/Unity_Project_First/DOTweenProject/.vs/DOTweenProject/v15
-/Unity_Project_First/FishMaster/Temp
-/Unity_Project_First/FishMaster/ProjectSettings
-/Unity_Project_First/FishMaster/Packages
-/Unity_Project_First/FishMaster/obj
-/Unity_Project_First/FishMaster/Logs
-/Unity_Project_First/FishMaster/Library
-/Unity_Project_First/FishMaster/FishMaster.sln
-/Unity_Project_First/FishMaster/Assembly-CSharp.csproj
-/Unity_Project_First/FishMaster/.vs/FishMaster/v15
-/Unity_Project_First/New Unity Project/ProjectSettings
-/Unity_Project_First/New Unity Project/Packages
-/Unity_Project_First/New Unity Project/obj
-/Unity_Project_First/New Unity Project/New Unity Project.sln
-/Unity_Project_First/New Unity Project/Library
-/Unity_Project_First/New Unity Project/Assembly-CSharp.csproj
-/Unity_Project_First/New Unity Project/.vs/New Unity Project/v15
-/Unity_Project_First/RoguelikeProject/RoguelikeProject.sln
-/Unity_Project_First/RoguelikeProject/ProjectSettings
-/Unity_Project_First/RoguelikeProject/Packages
-/Unity_Project_First/RoguelikeProject/obj
-/Unity_Project_First/RoguelikeProject/Logs
-/Unity_Project_First/RoguelikeProject/Library
-/Unity_Project_First/RoguelikeProject/Assembly-CSharp.csproj
-/Unity_Project_First/RoguelikeProject/.vs/RoguelikeProject/v15
-/Unity_Project_First/Roll A Ball/UnityEngine.TestRunner.csproj
-/Unity_Project_First/Roll A Ball/UnityEditor.TestRunner.csproj
-/Unity_Project_First/Roll A Ball/Unity.VSCode.Editor.csproj
-/Unity_Project_First/Roll A Ball/Unity.TextMeshPro.Editor.csproj
-/Unity_Project_First/Roll A Ball/Unity.TextMeshPro.csproj
-/Unity_Project_First/Roll A Ball/Unity.Rider.Editor.csproj
-/Unity_Project_First/Roll A Ball/Unity.CollabProxy.Editor.csproj
-/Unity_Project_First/Roll A Ball/Roll A Boll 思路流程.docx
-/Unity_Project_First/Roll A Ball/Roll A Ball.sln
-/Unity_Project_First/Roll A Ball/Roll A Ball.csproj
-/Unity_Project_First/Roll A Ball/ProjectSettings
-/Unity_Project_First/Roll A Ball/Packages
-/Unity_Project_First/Roll A Ball/obj
-/Unity_Project_First/Roll A Ball/Logs
-/Unity_Project_First/Roll A Ball/Library
-/Unity_Project_First/Roll A Ball/Assembly-CSharp.csproj
-/Unity_Project_First/Roll A Ball/.vs/Roll A Ball/v15
-/Unity_Project_First/Snake/Snake.sln
-/Unity_Project_First/Snake/ProjectSettings
-/Unity_Project_First/Snake/Packages
-/Unity_Project_First/Snake/obj
-/Unity_Project_First/Snake/Logs
-/Unity_Project_First/Snake/Library
-/Unity_Project_First/Snake/Assembly-CSharp.csproj
-/Unity_Project_First/Snake/.vs/Snake/v15
-/Unity_Project_First/StickPin/素材
-/Unity_Project_First/StickPin/UnityEngine.TestRunner.csproj
-/Unity_Project_First/StickPin/UnityEditor.TestRunner.csproj
-/Unity_Project_First/StickPin/Unity.VSCode.Editor.csproj
-/Unity_Project_First/StickPin/Unity.TextMeshPro.Editor.csproj
-/Unity_Project_First/StickPin/Unity.TextMeshPro.csproj
-/Unity_Project_First/StickPin/Unity.Rider.Editor.csproj
-/Unity_Project_First/StickPin/Unity.CollabProxy.Editor.csproj
-/Unity_Project_First/StickPin/StickPin.sln
-/Unity_Project_First/StickPin/StickPin.csproj
-/Unity_Project_First/StickPin/Stick Pin 思路流程.docx
-/Unity_Project_First/StickPin/ProjectSettings
-/Unity_Project_First/StickPin/Packages
-/Unity_Project_First/StickPin/obj
-/Unity_Project_First/StickPin/Logs
-/Unity_Project_First/StickPin/Library
-/Unity_Project_First/StickPin/Assembly-CSharp.csproj
-/Unity_Project_First/StickPin/.vs/StickPin/v15
-/Unity_Project_First/TankBattle/TankBattle.sln
-/Unity_Project_First/TankBattle/ProjectSettings
-/Unity_Project_First/TankBattle/Packages
-/Unity_Project_First/TankBattle/obj
-/Unity_Project_First/TankBattle/Logs
-/Unity_Project_First/TankBattle/Library
-/Unity_Project_First/TankBattle/Assembly-CSharp.csproj
-/Unity_Project_First/TankBattle/.vs/TankBattle/v15
-/Unity_Project_First/Tanks/Tanks.sln
-/Unity_Project_First/Tanks/ProjectSettings
-/Unity_Project_First/Tanks/Packages
-/Unity_Project_First/Tanks/obj
-/Unity_Project_First/Tanks/Logs
-/Unity_Project_First/Tanks/Library
-/Unity_Project_First/Tanks/Assembly-CSharp.csproj
-/Unity_Project_First/Tanks/Assembly-CSharp-firstpass.csproj
-/Unity_Project_First/Tanks/Assembly-CSharp-Editor.csproj
-/Unity_Project_First/Tanks/.vs/Tanks/v15
-/Unity_Project_First/TanksProject/TanksProject.sln
-/Unity_Project_First/TanksProject/ProjectSettings
-/Unity_Project_First/TanksProject/Packages
-/Unity_Project_First/TanksProject/obj
-/Unity_Project_First/TanksProject/Logs
-/Unity_Project_First/TanksProject/Library
-/Unity_Project_First/TanksProject/Assembly-CSharp.csproj
-/Unity_Project_First/TanksProject/Assembly-CSharp-firstpass.csproj
-/Unity_Project_First/TanksProject/Assembly-CSharp-Editor.csproj
-/Unity_Project_First/TanksProject/.vs/TanksProject/v15
-/Unity_Project_First/UGUI_Project/UGUI_Project.sln.DotSettings.user
-/Unity_Project_First/UGUI_Project/UGUI_Project.sln
-/Unity_Project_First/UGUI_Project/Temp
-/Unity_Project_First/UGUI_Project/ProjectSettings
-/Unity_Project_First/UGUI_Project/Packages
-/Unity_Project_First/UGUI_Project/obj
-/Unity_Project_First/UGUI_Project/Library
-/Unity_Project_First/UGUI_Project/Assembly-CSharp.csproj
-/Unity_Project_First/ZeroBasicLearningProject/ZeroBasicLearningProject.userprefs
-/Unity_Project_First/ZeroBasicLearningProject/ZeroBasicLearningProject.sln
-/Unity_Project_First/ZeroBasicLearningProject/ZeroBasicLearningProject.Plugins.csproj
-/Unity_Project_First/ZeroBasicLearningProject/ZeroBasicLearningProject.Editor.Plugins.csproj
-/Unity_Project_First/ZeroBasicLearningProject/ZeroBasicLearningProject.csproj
-/Unity_Project_First/ZeroBasicLearningProject/ProjectSettings
-/Unity_Project_First/ZeroBasicLearningProject/Packages
-/Unity_Project_First/ZeroBasicLearningProject/obj
-/Unity_Project_First/ZeroBasicLearningProject/Assembly-CSharp.csproj
-/Unity_Project_First/ZeroBasicLearningProject/Assembly-CSharp-firstpass.csproj
-/Unity_Project_First/ZeroBasicLearningProject/Assembly-CSharp-Editor-firstpass.csproj
-/Unity_Project_First/AngryBird/Assets/Scenes
-/Unity_Project_First/AngryBird/Assets/Resources
-/Unity_Project_First/AngryBird/Assets/Prefabs
-/Unity_Project_First/AngryBird/Assets/PocketRPG Trails
-/Unity_Project_First/AngryBird/Assets/Music
-/Unity_Project_First/AngryBird/Assets/Materials
-/Unity_Project_First/AngryBird/Assets/Image
-/Unity_Project_First/AngryBird/Assets/Animation
-/Unity_Project_First/AngryBird/Assets/Standard Assets.meta
-/Unity_Project_First/AngryBird/Assets/Standard Assets
-/Unity_Project_First/AngryBird/Assets/Scripts.meta
-/Unity_Project_First/AngryBird/Assets/Scenes.meta
-/Unity_Project_First/AngryBird/Assets/Resources.meta
-/Unity_Project_First/AngryBird/Assets/Prefabs.meta
-/Unity_Project_First/AngryBird/Assets/PocketRPG Trails.meta
-/Unity_Project_First/AngryBird/Assets/Music.meta
-/Unity_Project_First/AngryBird/Assets/Materials.meta
-/Unity_Project_First/AngryBird/Assets/Image.meta
-/Unity_Project_First/AngryBird/Assets/Animation.meta
-/Unity_Project_First/DOTweenProject/Assets/Scripts.meta
-/Unity_Project_First/DOTweenProject/Assets/Scenes.meta
-/Unity_Project_First/DOTweenProject/Assets/Scenes
-/Unity_Project_First/DOTweenProject/Assets/Resources.meta
-/Unity_Project_First/DOTweenProject/Assets/Resources
-/Unity_Project_First/DOTweenProject/Assets/Demigiant.meta
 /Unity_Project_First/DOTweenProject/Assets/Demigiant
-/Unity_Project_First/FishMaster/Assets/Webs.meta
-/Unity_Project_First/FishMaster/Assets/Webs
-/Unity_Project_First/FishMaster/Assets/Weapon.meta
-/Unity_Project_First/FishMaster/Assets/Weapon
-/Unity_Project_First/FishMaster/Assets/Water.meta
-/Unity_Project_First/FishMaster/Assets/Water
-/Unity_Project_First/FishMaster/Assets/UI.meta
-/Unity_Project_First/FishMaster/Assets/UI
-/Unity_Project_First/FishMaster/Assets/Start.meta
-/Unity_Project_First/FishMaster/Assets/Start
-/Unity_Project_First/FishMaster/Assets/Sound.meta
-/Unity_Project_First/FishMaster/Assets/Sound
-/Unity_Project_First/FishMaster/Assets/Scripts.meta
-/Unity_Project_First/FishMaster/Assets/Scenes.meta
-/Unity_Project_First/FishMaster/Assets/Scenes
-/Unity_Project_First/FishMaster/Assets/Prefabs.meta
-/Unity_Project_First/FishMaster/Assets/Prefabs
-/Unity_Project_First/FishMaster/Assets/Other.meta
-/Unity_Project_First/FishMaster/Assets/Other
-/Unity_Project_First/FishMaster/Assets/Fonts.meta
-/Unity_Project_First/FishMaster/Assets/Fonts
-/Unity_Project_First/FishMaster/Assets/Fish.meta
-/Unity_Project_First/FishMaster/Assets/Fish
-/Unity_Project_First/FishMaster/Assets/Effect.meta
-/Unity_Project_First/FishMaster/Assets/Effect
-/Unity_Project_First/FishMaster/Assets/Bullets.meta
-/Unity_Project_First/FishMaster/Assets/Bullets
-/Unity_Project_First/FishMaster/Assets/Background.meta
-/Unity_Project_First/FishMaster/Assets/Background
-/Unity_Project_First/FishMaster/Assets/Animations.meta
-/Unity_Project_First/FishMaster/Assets/Animations
-/Unity_Project_First/New Unity Project/Assets/Scripts.meta
-/Unity_Project_First/New Unity Project/Assets/Scenes.meta
-/Unity_Project_First/New Unity Project/Assets/Scenes
-/Unity_Project_First/RoguelikeProject/Assets/Sprites.meta
-/Unity_Project_First/RoguelikeProject/Assets/Sprites
-/Unity_Project_First/RoguelikeProject/Assets/Scripts.meta
-/Unity_Project_First/RoguelikeProject/Assets/Scenes.meta
-/Unity_Project_First/RoguelikeProject/Assets/Scenes
-/Unity_Project_First/RoguelikeProject/Assets/Prefabs.meta
-/Unity_Project_First/RoguelikeProject/Assets/Prefabs
-/Unity_Project_First/RoguelikeProject/Assets/Fonts.meta
-/Unity_Project_First/RoguelikeProject/Assets/Fonts
-/Unity_Project_First/RoguelikeProject/Assets/Audio.meta
-/Unity_Project_First/RoguelikeProject/Assets/Audio
-/Unity_Project_First/RoguelikeProject/Assets/Animations.meta
-/Unity_Project_First/RoguelikeProject/Assets/Animations
-/Unity_Project_First/Roll A Ball/Assets/Scripts.meta
-/Unity_Project_First/Roll A Ball/Assets/Scenes.meta
-/Unity_Project_First/Roll A Ball/Assets/Scenes
-/Unity_Project_First/Roll A Ball/Assets/Prefebs.meta
-/Unity_Project_First/Roll A Ball/Assets/Prefebs
-/Unity_Project_First/Roll A Ball/Assets/Materials.meta
-/Unity_Project_First/Roll A Ball/Assets/Materials
-/Unity_Project_First/Snake/Assets/Sprites.meta
-/Unity_Project_First/Snake/Assets/Scripts.meta
-/Unity_Project_First/Snake/Assets/Scenes.meta
-/Unity_Project_First/Snake/Assets/Scenes
-/Unity_Project_First/Snake/Assets/Resources.meta
-/Unity_Project_First/Snake/Assets/Resources
-/Unity_Project_First/Snake/Assets/Prefabs.meta
-/Unity_Project_First/Snake/Assets/Prefabs
-/Unity_Project_First/Snake/Assets/Fonts.meta
-/Unity_Project_First/Snake/Assets/Fonts
-/Unity_Project_First/Snake/Assets/Fbx.meta
-/Unity_Project_First/Snake/Assets/Fbx
-/Unity_Project_First/Snake/Assets/Audio.meta
-/Unity_Project_First/Snake/Assets/Audio
-/Unity_Project_First/StickPin/Assets/Scripts.meta
-/Unity_Project_First/StickPin/Assets/Scenes.meta
-/Unity_Project_First/StickPin/Assets/Scenes
-/Unity_Project_First/StickPin/Assets/Prefebs.meta
-/Unity_Project_First/StickPin/Assets/Prefebs
-/Unity_Project_First/StickPin/Assets/Image.meta
-/Unity_Project_First/StickPin/Assets/Image
-/Unity_Project_First/TankBattle/Assets/Scripts.meta
-/Unity_Project_First/TankBattle/Assets/Scenes.meta
-/Unity_Project_First/TankBattle/Assets/Scenes
-/Unity_Project_First/TankBattle/Assets/Prefabs.meta
-/Unity_Project_First/TankBattle/Assets/Prefabs
-/Unity_Project_First/TankBattle/Assets/GameResource.meta
-/Unity_Project_First/TankBattle/Assets/GameResource
-/Unity_Project_First/TankBattle/Assets/AnimatorController.meta
-/Unity_Project_First/TankBattle/Assets/AnimatorController
-/Unity_Project_First/TankBattle/Assets/Animation.meta
-/Unity_Project_First/TankBattle/Assets/Animation
-/Unity_Project_First/UGUI_Project/Assets/UI.meta
-/Unity_Project_First/UGUI_Project/Assets/UI
-/Unity_Project_First/UGUI_Project/Assets/Scripts.meta
-/Unity_Project_First/UGUI_Project/Assets/Scenes.meta
-/Unity_Project_First/UGUI_Project/Assets/Scenes
-/Unity_Project_First/UGUI_Project/Assets/Prefabs.meta
-/Unity_Project_First/UGUI_Project/Assets/Prefabs
-/Unity_Project_First/ZeroBasicLearningProject/Assets/_TerrainAutoUpgrade.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/_TerrainAutoUpgrade
-/Unity_Project_First/ZeroBasicLearningProject/Assets/UI.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/UI
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Textures.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Textures
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Terrain.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Terrain
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Standard Assets.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Standard Assets
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Scripts.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Scenes.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Scenes
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Prefabs.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Prefabs
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Meshes.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Meshes
-/Unity_Project_First/ZeroBasicLearningProject/Assets/FX.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/FX
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Audio.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Audio
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Animations.meta
-/Unity_Project_First/ZeroBasicLearningProject/Assets/Animations
-/Unity_Project_First/Snake/Assets/Sprites
-/Unity_Project_First/Tanks/Assets/Standard Assets.meta
-/Unity_Project_First/Tanks/Assets/Standard Assets
-/Unity_Project_First/Tanks/Assets/Sprites.meta
-/Unity_Project_First/Tanks/Assets/Sprites
-/Unity_Project_First/Tanks/Assets/Scripts.meta
-/Unity_Project_First/Tanks/Assets/Scenes.meta
-/Unity_Project_First/Tanks/Assets/Scenes
-/Unity_Project_First/Tanks/Assets/Prefabs.meta
-/Unity_Project_First/Tanks/Assets/Prefabs
-/Unity_Project_First/Tanks/Assets/Models.meta
-/Unity_Project_First/Tanks/Assets/Models
-/Unity_Project_First/Tanks/Assets/Materials.meta
-/Unity_Project_First/Tanks/Assets/Materials
-/Unity_Project_First/Tanks/Assets/Fonts.meta
-/Unity_Project_First/Tanks/Assets/Fonts
-/Unity_Project_First/Tanks/Assets/Editor.meta
+/Unity_Project_First/FishMaster/Temp
+/Unity_Project_First/FishMaster/obj/Debug
+/Unity_Project_First/FishMaster/Library
+/Unity_Project_First/New Unity Project/obj/Debug
+/Unity_Project_First/New Unity Project/Library
+/Unity_Project_First/RoguelikeProject/obj/Debug
+/Unity_Project_First/RoguelikeProject/Library
+/Unity_Project_First/Roll A Ball/obj/Debug
+/Unity_Project_First/Roll A Ball/Library
+/Unity_Project_First/Snake/obj/Debug
+/Unity_Project_First/Snake/Library
+/Unity_Project_First/StickPin/obj/Debug
+/Unity_Project_First/StickPin/Library
+/Unity_Project_First/TankBattle/obj/Debug
+/Unity_Project_First/TankBattle/Library
+/Unity_Project_First/Tanks/Assets/Standard Assets/Effects/ImageEffects/Scripts
 /Unity_Project_First/Tanks/Assets/Editor
-/Unity_Project_First/Tanks/Assets/AudioClips.meta
-/Unity_Project_First/Tanks/Assets/AudioClips
-/Unity_Project_First/TanksProject/Assets/Standard Assets.meta
-/Unity_Project_First/TanksProject/Assets/Standard Assets
-/Unity_Project_First/TanksProject/Assets/Sprites.meta
-/Unity_Project_First/TanksProject/Assets/Sprites
-/Unity_Project_First/TanksProject/Assets/Scripts.meta
-/Unity_Project_First/TanksProject/Assets/Scenes.meta
-/Unity_Project_First/TanksProject/Assets/Scenes
-/Unity_Project_First/TanksProject/Assets/Prefabs.meta
-/Unity_Project_First/TanksProject/Assets/Prefabs
-/Unity_Project_First/TanksProject/Assets/Models.meta
-/Unity_Project_First/TanksProject/Assets/Models
-/Unity_Project_First/TanksProject/Assets/Materials.meta
-/Unity_Project_First/TanksProject/Assets/Materials
-/Unity_Project_First/TanksProject/Assets/Fonts.meta
-/Unity_Project_First/TanksProject/Assets/Fonts
-/Unity_Project_First/TanksProject/Assets/Editor.meta
+/Unity_Project_First/Tanks/obj/Debug
+/Unity_Project_First/Tanks/Library
+/Unity_Project_First/TanksProject/Assets/Standard Assets/Effects/ImageEffects/Scripts
 /Unity_Project_First/TanksProject/Assets/Editor
-/Unity_Project_First/TanksProject/Assets/AudioClips.meta
-/Unity_Project_First/TanksProject/Assets/AudioClips
-/Unity_Project_First/AngryBird/Assets/Scripts/YellowBird.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Win.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Trail.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/ReturnToMaps.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Pig.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Pause.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/MapSelect.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/LoadLevel.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Level_n.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/GreenBird.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/GameManager.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Boom.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/BlackBird.cs.meta
-/Unity_Project_First/AngryBird/Assets/Scripts/Bird.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/WebAttr.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/StartUI.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/SeaWave.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/HideSelf.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/GunFollow.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/Gold.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/GameUI.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/GameManager.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/FishMaker.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/FishAttr.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/Effects.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/Effects/Ef_waterWave.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/Effects/Ef_PlayEffect.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/Effects/Ef_AutoRotate.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/Effects/Ef_AutoMove.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/DestorySelf.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/BulletAttr.cs.meta
-/Unity_Project_First/FishMaster/Assets/Scripts/AudioManager.cs.meta
-/Unity_Project_First/Roll A Ball/Assets/Scripts/Player.cs.meta
-/Unity_Project_First/Roll A Ball/Assets/Scripts/PickUp.cs.meta
-/Unity_Project_First/Roll A Ball/Assets/Scripts/FollowPlayer.cs.meta
-/Unity_Project_First/StickPin/Assets/Scripts/RotateSelf.cs.meta
-/Unity_Project_First/StickPin/Assets/Scripts/PinHead.cs.meta
-/Unity_Project_First/StickPin/Assets/Scripts/Pin.cs.meta
-/Unity_Project_First/StickPin/Assets/Scripts/GameManager.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/PlayerManager.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Player.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Option.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/MapCreation.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Heart.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Enemy.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Destory.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Bullet.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Born.cs.meta
-/Unity_Project_First/TankBattle/Assets/Scripts/Barrier.cs.meta
-*.meta
+/Unity_Project_First/TanksProject/obj/Debug
+/Unity_Project_First/TanksProject/Library
+/Unity_Project_First/UGUI_Project/Temp
+/Unity_Project_First/UGUI_Project/Library
+/Unity_Project_First/ZeroBasicLearningProject/Assets/Standard Assets
