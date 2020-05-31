@@ -1,9 +1,9 @@
-﻿using System;
+﻿using LitJson;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml;
-using LitJson;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -164,26 +164,38 @@ public class GameManager : MonoBehaviour {
 
     // 二进制方法保存游戏
     private void SaveByBin() {
+#if UNITY_EDITOR
+        string sFilePath = Application.dataPath + "/StreamingFile/saveByBin";
+#else
+        string sFilePath = System.Environment.CurrentDirectory + "/saveByBin";
+#endif
+
         /// 序列化过程（将SaveInfo对象转化为字节流）
         // 创建一个保存当前游戏状态的SaveInfo对象
         SaveInfo saveInfo = CreateSaveInfoGO();
         // 创建一个二进制格式化程序
         BinaryFormatter bf = new BinaryFormatter();
         // 创建一个文件流
-        FileStream fileStream = File.Create(Application.dataPath + "/StreamingFile/saveByBin");
+        FileStream fileStream = File.Create(sFilePath);
         // 序列化
         bf.Serialize(fileStream, saveInfo);
         // 关闭流
         fileStream.Close();
         // 提示信息
-        if (File.Exists(Application.dataPath + "/StreamingFile/saveByBin")) {
+        if (File.Exists(sFilePath)) {
             UIManager.Instance.ShowMessage("保存成功");
         }
     }
 
     // 二进制方法加载游戏
     private void LoadByBin() {
-        if (!File.Exists(Application.dataPath + "/StreamingFile/saveByBin")) {
+#if UNITY_EDITOR
+        string sFilePath = Application.dataPath + "/StreamingFile/saveByBin";
+#else
+        string sFilePath = System.Environment.CurrentDirectory + "/saveByBin";
+#endif
+
+        if (!File.Exists(sFilePath)) {
             UIManager.Instance.ShowMessage("加载失败");
             return;
         }
@@ -192,8 +204,8 @@ public class GameManager : MonoBehaviour {
         // 创建一个二进制格式化程序
         BinaryFormatter bf = new BinaryFormatter();
         // 打开一个文件流
-        FileStream fileStream = File.Open(Application.dataPath + "/StreamingFile/saveByBin", FileMode.Open);
-        // 反序列化 
+        FileStream fileStream = File.Open(sFilePath, FileMode.Open);
+        // 反序列化
         SaveInfo saveInfo = (SaveInfo)bf.Deserialize(fileStream);
         // 关闭文件流
         fileStream.Close();
@@ -206,7 +218,11 @@ public class GameManager : MonoBehaviour {
     // Json方法保存游戏
     private void SaveByJson() {
         SaveInfo saveInfo = CreateSaveInfoGO();
+#if UNITY_EDITOR
         string sFilePath = Application.dataPath + "/StreamingFile/SaveByJson.json";
+#else
+        string sFilePath = System.Environment.CurrentDirectory + "/SaveByJson.json";
+#endif
         // 利用JsonMapper将SaveInfo对象转换为Json格式的字符串
         string sJson = JsonMapper.ToJson(saveInfo);
         // 将Json字符串写入文件中
@@ -220,7 +236,11 @@ public class GameManager : MonoBehaviour {
 
     // Json方法加载游戏
     private void LoadByJson() {
+#if UNITY_EDITOR
         string sFilePath = Application.dataPath + "/StreamingFile/SaveByJson.json";
+#else
+        string sFilePath = System.Environment.CurrentDirectory + "/SaveByJson.json";
+#endif
         if (!File.Exists(sFilePath)) {
             UIManager.Instance.ShowMessage("加载失败");
             return;
@@ -240,8 +260,11 @@ public class GameManager : MonoBehaviour {
     // XML方法保存游戏
     private void SaveByXML() {
         SaveInfo saveInfo = CreateSaveInfoGO();
+#if UNITY_EDITOR
         string sFilePath = Application.dataPath + "/StreamingFile/SaveByXML.xml";
-
+#else
+        string sFilePath = System.Environment.CurrentDirectory + "/SaveByXML.xml";
+#endif
         XmlDocument xmlDoc = new XmlDocument();
         XmlElement root = xmlDoc.CreateElement("SaveInfo");
         root.SetAttribute("name", "SaveFile1");
@@ -281,7 +304,11 @@ public class GameManager : MonoBehaviour {
 
     // XML方法读取游戏
     private void LoadByXML() {
+#if UNITY_EDITOR
         string sFilePath = Application.dataPath + "/StreamingFile/SaveByXML.xml";
+#else
+        string sFilePath = System.Environment.CurrentDirectory + "/SaveByXML.xml";
+#endif
         if (!File.Exists(sFilePath)) {
             UIManager.Instance.ShowMessage("加载失败");
             return;
