@@ -133,6 +133,8 @@ public class EnemyController : MonoBehaviour
         m_anim.SetTrigger("Fixed");
         m_effectSmoke.Stop();
 
+        GameManager.Instance.AddFixedNum();
+
         // 播放击中机器人的特效
         Instantiate(m_effectHit, transform.position, Quaternion.identity);
 

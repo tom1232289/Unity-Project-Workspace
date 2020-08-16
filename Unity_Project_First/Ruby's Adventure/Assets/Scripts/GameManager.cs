@@ -17,13 +17,13 @@ public class GameManager : MonoBehaviour
     public bool m_bIsCompleteTask;
 
     // 需要修理的机器人的数量
-    public int m_iNeedFixNum;
+    public int m_iNeedFixNum = 3;
 
     /// <summary>
     /// 私有变量
     /// </summary>
     // 修理的机器人数量
-    private int m_iFixedNum = 3;
+    private int m_iFixedNum;
 
     private void Awake()
     {
