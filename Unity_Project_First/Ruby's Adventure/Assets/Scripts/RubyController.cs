@@ -75,6 +75,7 @@ public class RubyController : MonoBehaviour
     private void InitMemberVariable()
     {
         m_fCurHp = m_fMaxHp;
+        m_posBorn = transform.position;
     }
 
     private void Awake()
@@ -210,7 +211,7 @@ public class RubyController : MonoBehaviour
     /// <param name="clip"></param>
     public void PlaySound(AudioClip clip)
     {
-        m_audioSource.PlayOneShot(clip);
+        AudioSource.PlayClipAtPoint(clip, transform.position);
     }
 
     /// <summary>
@@ -218,6 +219,7 @@ public class RubyController : MonoBehaviour
     /// </summary>
     private void Reborn()
     {
+        m_bIsInvincible = false;
         ChangeHp(m_fMaxHp);
         transform.position = m_posBorn;
     }
