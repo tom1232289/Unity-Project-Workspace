@@ -8,12 +8,23 @@ public class RubyController : MonoBehaviour
     // 齿轮飞镖的预制体
     public GameObject m_goCogBullet;
 
+    // 受伤的音效
+    public AudioClip m_acHurt;
+
+    // 发射齿轮飞镖的音效
+    public AudioClip m_acAttack;
+
+    // 走路的音效
+    public AudioClip m_acMove;
+
     /// <summary>
     /// 私有引用
     /// </summary>
     private Rigidbody2D m_rigidbody2d;
 
     private Animator m_anim;
+
+    private AudioSource m_audioSource;
 
     /// <summary>
     /// 公有变量
@@ -45,6 +56,9 @@ public class RubyController : MonoBehaviour
     // Ruby当前看向
     private Vector2 m_LookDirction = new Vector2(1, 0);
 
+    // Ruby出生点
+    private Vector2 m_posBorn;
+
     /// <summary>
     /// 初始化组件
     /// </summary>
@@ -52,6 +66,7 @@ public class RubyController : MonoBehaviour
     {
         m_rigidbody2d = GetComponent<Rigidbody2D>();
         m_anim = GetComponent<Animator>();
+        m_audioSource = GetComponent<AudioSource>();
     }
 
     /// <summary>
@@ -88,6 +103,20 @@ public class RubyController : MonoBehaviour
         {
             Launch();
         }
+
+        // 与NPC对话
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(0, 0.2f, 0), m_LookDirction, 1.5f, LayerMask.GetMask("NPC"));
+            if (hit != null)
+            {
+                NPCDialog npcDialog = hit.collider.GetComponentInChildren(typeof(NPCDialog), true) as NPCDialog;
+                if (npcDialog != null)
+                {
+                    npcDialog.DisplayDialog();
+                }
+            }
+        }
     }
 
     private void Move()
@@ -101,6 +130,16 @@ public class RubyController : MonoBehaviour
         {
             m_LookDirction = move;
             m_LookDirction.Normalize();
+            // 播放走路音效
+            if (!m_audioSource.isPlaying)
+            {
+                m_audioSource.clip = m_acMove;
+                m_audioSource.Play();
+            }
+        }
+        else
+        {
+            m_audioSource.Stop();
         }
         m_anim.SetFloat("Look X", m_LookDirction.x);
         m_anim.SetFloat("Look Y", m_LookDirction.y);
@@ -127,7 +166,18 @@ public class RubyController : MonoBehaviour
 
         // 受伤
         m_fCurHp = Mathf.Clamp(m_fCurHp + fAmount, 0, m_fMaxHp);
-        Debug.Log(m_fCurHp);
+        UIHealthBar.Instance.SetValue(m_fCurHp / m_fMaxHp);
+        if (fAmount < 0)
+        {
+            PlaySound(m_acHurt);
+            m_anim.SetTrigger("Hit");
+        }
+
+        // 重生
+        if (m_fCurHp <= 0)
+        {
+            Reborn();
+        }
     }
 
     public float GetCurHp()
@@ -140,10 +190,35 @@ public class RubyController : MonoBehaviour
     /// </summary>
     private void Launch()
     {
-        GameObject goCogBullet = Instantiate(m_goCogBullet, transform.position, Quaternion.identity);
+        if (!GameManager.Instance.m_bIsAcceptTask)
+        {
+            return;
+        }
+
+        GameObject goCogBullet = Instantiate(m_goCogBullet, transform.position + Vector3.up * 0.5f + (Vector3)m_LookDirction * 0.5f, Quaternion.identity);
         CogBullet cogBullet = goCogBullet.GetComponent<CogBullet>();
         cogBullet.Launch(m_LookDirction, m_fAttackForce);
         // 播放攻击动画
         m_anim.SetTrigger("Launch");
+        // 播放攻击音效
+        AudioSource.PlayClipAtPoint(m_acAttack, transform.position);
+    }
+
+    /// <summary>
+    /// 播放音效
+    /// </summary>
+    /// <param name="clip"></param>
+    public void PlaySound(AudioClip clip)
+    {
+        m_audioSource.PlayOneShot(clip);
+    }
+
+    /// <summary>
+    /// 重生
+    /// </summary>
+    private void Reborn()
+    {
+        ChangeHp(m_fMaxHp);
+        transform.position = m_posBorn;
     }
 }
